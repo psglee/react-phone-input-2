@@ -514,7 +514,8 @@ class PhoneInput extends React.Component {
         newSelectedCountry.dialCode;
 
       const updatedInput = prefix+mainCode;
-      if (value.slice(0, updatedInput.length) !== updatedInput) return;
+      // if (value.slice(0, updatedInput.length) !== updatedInput) return;
+      if (value.slice(0, updatedInput.length) !== updatedInput && valueWithPrefix.slice(0, updatedInput.length) !== updatedInput) return;
     }
 
     if (value === prefix) {
